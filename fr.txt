@@ -1,1 +1,31 @@
 hghjgjhghjg
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+float calc(int a, int b,char o) {
+	float result = 0;
+	if (o == '+') {
+		 result = a + b;
+}
+	if (o == '/') {
+		 result = a / b;
+	}
+	if (o == '*') {
+		 result = a * b;
+	}
+	if (o == '-') {
+		 result = a - b;
+	}
+	printf("%d %c %d = %4.2f  ", a, o, b,result);
+	return result;
+}
+
+
+void main() {
+	float a = calc(4, 5, '/' );
+	printf("%f", a );
+
+
+}
